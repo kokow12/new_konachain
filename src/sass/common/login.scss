@@ -1,0 +1,600 @@
+/*** // login ***/
+.login-box {
+	display: block;
+	margin: 22px 20px 0 20px;
+}
+.step-box {
+	display: block;
+	position: relative;
+}
+.step-box > .title {
+	font-size: 22px;
+	font-weight: 300;
+}
+.step-box > ul {
+	font-size: 0;
+	position: absolute;
+	right: 0;
+	top: 11px;
+}
+.step-box > ul > li {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background-color: #ddd;
+	border-radius: 25px;
+	margin-left: 5px;
+	box-sizing: border-box;
+}
+.step-box > ul > li.active {
+	background-color: #6828ff;
+	border-radius: 2px;
+}
+.underline-tab {
+	display: flex;
+}
+.underline-tab a.active {
+	color: #6828ff;
+	border-bottom: solid 2px #6828ff;
+}
+.underline-tab a {
+	flex: 1 1 auto;
+	width: 100%;
+	height: 38px;
+	padding: 0 19px;
+	line-height: 36px;
+	background-color: #fff;
+	font-size: 13px;
+	color: #999;
+	text-align: center;
+	border-bottom: solid 1px #eee;
+}
+
+.normal_member-input {
+	display: block;
+	margin-top: 30px;
+}
+.normal_member-input > .id-area {
+	display: block;
+}
+.normal_member-input > .id-area > .input-text > input {
+	padding-left: 48px;
+}
+.normal_member-input > .id-area > .input-text > .user-ico {
+	display: block;
+	position: absolute;
+	left: 18px;
+	top: 14px;
+	width: 20px;
+	height: 20px;
+	background: url(../../images/ico_60_gy_2_user.png) no-repeat center;
+	background-size: contain;
+}
+.normal_member-input > .pass-area {
+	display: block;
+	margin: 8px 0 15px 0;
+}
+.normal_member-input > .pass-area > .input-text > input {
+	padding-left: 48px;
+}
+.normal_member-input > .pass-area > .input-text > .pass-ico {
+	display: block;
+	position: absolute;
+	left: 18px;
+	top: 14px;
+	width: 20px;
+	height: 20px;
+	background: url(../../images/ico_60_gy_2_lock.png) no-repeat center;
+	background-size: contain;
+}
+.corporation_member-input {
+	display: block;
+	margin-top: 30px;
+}
+.corporation_member-input > .id-area {
+	display: block;
+}
+.corporation_member-input > .id-area > .input-text > input {
+	padding-left: 48px;
+}
+.corporation_member-input > .id-area > .input-text > .user-ico {
+	display: block;
+	position: absolute;
+	left: 18px;
+	top: 14px;
+	width: 20px;
+	height: 20px;
+	background: url(../../images/ico_60_gy_2_user.png) no-repeat center;
+	background-size: contain;
+}
+.corporation_member-input > .pass-area {
+	display: block;
+	margin: 8px 0 15px 0;
+}
+.corporation_member-input > .pass-area > .input-text > input {
+	padding-left: 48px;
+}
+.corporation_member-input > .pass-area > .input-text > .pass-ico {
+	display: block;
+	position: absolute;
+	left: 18px;
+	top: 14px;
+	width: 20px;
+	height: 20px;
+	background: url(../../images/ico_60_gy_2_lock.png) no-repeat center;
+	background-size: contain;
+}
+.login-btn-area {
+	margin: 43px 0 0 0;
+}
+.login-btn-area > .login-info-btn-list {
+	font-size: 0;
+	display: block;
+	text-align: center;
+	margin-top: 31px;
+}
+.login-btn-area > .login-info-btn-list > li {
+	display: inline-block;
+}
+/* .login-btn-area > .login-info-btn-list > li:first-child {    
+    margin-left:0; 
+} */
+.login-btn-area > .login-info-btn-list > li > .line {
+	background-color: #ddd;
+	width: 1px;
+	height: 11px;
+	display: inline-block;
+	margin: 0 15px;
+	position: relative;
+	top: 1px;
+}
+/* .login-btn-area > .login-info-btn-list > li:last-child {    
+    margin-right:0; 
+} */
+.login-btn-area > .login-info-btn-list > li > a {
+	font-size: 12px;
+	color: #666;
+	font-weight: 400;
+}
+.find-box {
+	display: block;
+	margin: 22px 20px 0 20px;
+}
+.find-box > .find-input > .title {
+	font-size: 17px;
+	font-weight: 300;
+	margin-top: 40px;
+}
+.find-box > .find-input > .section {
+	display: block;
+	margin-top: 30px;
+}
+.find-box > .find-input > .section > h2 {
+	font-size: 14px;
+	font-weight: 400;
+	color: 000;
+}
+.find-box > .find-input > .section > h2::after {
+	content: "*";
+	color: #ff4155;
+}
+.find-box > .find-input > .section > .noti {
+	font-size: 12px;
+	color: #666;
+	margin-top: 10px;
+}
+.find-box > .find-input > .section > .dis_flex {
+	display: flex;
+}
+.find-box > .find-input > .section > .dis_flex > .input-text {
+	width: 100%;
+}
+.find-box > .find-input > .section > .dis_flex > .input-text > .red-time {
+	display: none;
+	position: absolute;
+	right: 18px;
+	top: 19px;
+}
+.find-box
+	> .find-input
+	> .section
+	> .dis_flex
+	> .input-text
+	> .red-time.active {
+	display: block;
+	font-size: 12px;
+	color: #ff4155;
+	font-family: "Roboto";
+}
+.find-box > .find-input > .section > .dis_flex > .btn-bd-pu-s {
+	width: 106px;
+	margin-left: 8px;
+}
+.find-box > .find-input > .section > .dis_flex + .dis_flex {
+	margin-top: 8px;
+}
+.find-box > .find-input > .password-state {
+	display: block;
+	margin-top: 10px;
+}
+.find-box > .find-input > .password-state + .section {
+	margin-top: 10px;
+}
+.find-box > .find-input > .password-state > ul {
+	font-size: 0;
+}
+.find-box > .find-input > .password-state > ul > li {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #999;
+}
+.find-box > .find-input > .password-state > ul > li:first-child {
+	margin-right: 7px;
+}
+.find-box > .find-input > .password-state > ul > li:nth-child(2) {
+	width: 15px;
+	height: 3px;
+	background-color: #ddd;
+	margin-right: 1px;
+}
+.find-box > .find-input > .password-state > ul > li:nth-child(3) {
+	width: 15px;
+	height: 3px;
+	background-color: #ddd;
+	margin-right: 1px;
+}
+.find-box > .find-input > .password-state > ul > li:nth-child(4) {
+	width: 15px;
+	height: 3px;
+	background-color: #ddd;
+}
+.find-box > .find-input > .password-state > ul.state-lv2 > li {
+	color: #ff4155;
+}
+.find-box > .find-input > .password-state > ul.state-lv2 > li:nth-child(2) {
+	width: 15px;
+	height: 3px;
+	background-color: #ff4155;
+	margin-right: 1px;
+}
+.find-box > .find-input > .password-state > ul.state-lv2 > li:nth-child(3) {
+	width: 15px;
+	height: 3px;
+	background-color: #ff4155;
+	margin-right: 1px;
+}
+
+.find-box > .find-result {
+	display: block;
+	text-align: center;
+}
+.find-box > .find-result > img {
+	display: block;
+	margin: 44px auto 0 auto;
+	width: 46px;
+	height: 40px;
+}
+.find-box > .find-result > .result-text {
+	display: block;
+	font-size: 14px;
+	margin-top: 25px;
+}
+.find-box > .pass-reset {
+	display: block;
+	text-align: center;
+}
+.find-box > .pass-reset > img {
+	display: block;
+	margin: 44px auto 0 auto;
+	width: 46px;
+	height: 40px;
+}
+.find-box > .pass-reset > .reset-text {
+	display: block;
+	font-size: 14px;
+	margin-top: 25px;
+}
+.signup-box {
+	display: block;
+	margin: 31px 20px 0 20px;
+}
+.signup-box > .step-box {
+	margin-bottom: 20px;
+}
+.signup-info > img {
+	width: 100px;
+	height: 100px;
+	margin: 40px auto 20px auto;
+	display: block;
+}
+.signup-info > .step-4-img {
+	width: 44px;
+	height: 44px;
+	border: 1px solid #6828ff;
+	border-radius: 25px;
+	margin: 0 auto 20px auto;
+}
+.signup-info > .step-4-img > img {
+	display: block;
+	margin: 0 auto;
+	line-height: 44px;
+	position: relative;
+	top: 9px;
+}
+.signup-info > .title {
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+}
+.signup-info > .text {
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 12px;
+	line-height: 19px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.mb20 {
+	margin-bottom: 20px !important;
+}
+.signup-info > .round-text {
+	font-size: 12px;
+	color: #666;
+	line-height: 18px;
+	text-align: center;
+	background-color: #f5f5f5;
+	padding: 20px 37px;
+	margin-bottom: 40px;
+	border-radius: 12px;
+}
+.signup-input {
+	display: block;
+	padding-top: 20px;
+}
+.signup-input > .title {
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
+	display: block;
+}
+.signup-input > ul > li {
+	margin-top: 20px;
+	position: relative;
+}
+.signup-input > ul > li:first-child {
+	margin-top: 14px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 14px;
+}
+.signup-input > ul > li:nth-child(2)::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 0px;
+	top: 50%;
+	margin-top: -12px;
+	background: url(../../images/ico_60_bk_chevron_down.svg) no-repeat center;
+	background-size: contain;
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+}
+.signup-input > ul > li:nth-child(3)::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 0px;
+	top: 50%;
+	margin-top: -12px;
+	background: url(../../images/ico_60_bk_chevron_down.svg) no-repeat center;
+	background-size: contain;
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+}
+.signup-input > ul > li:nth-child(4)::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 0px;
+	top: 50%;
+	margin-top: -12px;
+	background: url(../../images/ico_60_bk_chevron_down.svg) no-repeat center;
+	background-size: contain;
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+}
+.signup-input > ul > li:nth-child(5)::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 0px;
+	top: 50%;
+	margin-top: -12px;
+	background: url(../../images/ico_60_bk_chevron_down.svg) no-repeat center;
+	background-size: contain;
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+}
+.signup-input-btn {
+	margin-top: 40px;
+	display: flex;
+}
+.signup-input-btn > button:first-child {
+	margin-right: 8px;
+}
+.section {
+	display: block;
+	margin-top: 30px;
+}
+.section > h2 {
+	font-size: 14px;
+	font-weight: 400;
+	color: 000;
+}
+.section > h2::after {
+	content: "*";
+	color: #ff4155;
+}
+.section > .noti {
+	font-size: 12px;
+	color: #666;
+	margin-top: 10px;
+}
+.section > .dis_flex {
+	display: flex;
+}
+.section > .dis_flex > .input-text {
+	width: 100%;
+}
+.section > .dis_flex > .input-text > .red-time {
+	display: none;
+	position: absolute;
+	right: 18px;
+	top: 19px;
+}
+.section > .dis_flex > .input-text > .red-time.active {
+	display: block;
+	font-size: 12px;
+	color: #ff4155;
+	font-family: "Roboto";
+}
+.section > .dis_flex > .btn-bd-pu-s {
+	width: 106px;
+	margin-left: 8px;
+}
+.section > .dis_flex + .dis_flex {
+	margin-top: 8px;
+}
+.password-state {
+	display: block;
+	margin-top: 10px;
+}
+.password-state + .section {
+	margin-top: 10px;
+}
+.password-state > ul {
+	font-size: 0;
+}
+.password-state > ul > li {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #999;
+}
+.password-state > ul > li:first-child {
+	margin-right: 7px;
+}
+.password-state > ul > li:nth-child(2) {
+	width: 15px;
+	height: 3px;
+	background-color: #ddd;
+	margin-right: 1px;
+}
+.password-state > ul > li:nth-child(3) {
+	width: 15px;
+	height: 3px;
+	background-color: #ddd;
+	margin-right: 1px;
+}
+.password-state > ul > li:nth-child(4) {
+	width: 15px;
+	height: 3px;
+	background-color: #ddd;
+}
+.password-state > ul.state-lv2 > li {
+	color: #ff4155;
+}
+.password-state > ul.state-lv2 > li:nth-child(2) {
+	width: 15px;
+	height: 3px;
+	background-color: #ff4155;
+	margin-right: 1px;
+}
+.password-state > ul.state-lv2 > li:nth-child(3) {
+	width: 15px;
+	height: 3px;
+	background-color: #ff4155;
+	margin-right: 1px;
+}
+.required-field {
+	float: right;
+	font-size: 12px;
+	font-weight: 400;
+	position: relative;
+	top: 4px;
+}
+.required-field::before {
+	content: "*";
+	color: #ff4155;
+}
+.dis_flex {
+	display: flex;
+}
+.dis_flex > .input-text {
+	width: 100%;
+}
+.section + .title {
+	margin-top: 60px;
+}
+.company-noti-list {
+	display: block;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #ddd;
+}
+.company-noti-list > span {
+	display: block;
+	font-size: 12px;
+	color: #666;
+	line-height: 17px;
+	letter-spacing: -0.3px;
+	margin-top: 20px;
+	padding-left: 7px;
+}
+.company-noti-list > span::before {
+	content: "";
+	width: 3px;
+	height: 3px;
+	background-color: #666;
+	border-radius: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -7px;
+	margin-right: 5px;
+}
+.company-noti-list + .bor-none {
+	margin-top: 30px;
+}
+.bor-box {
+	border: 1px solid #ddd;
+	padding: 14px 18px;
+	border-radius: 3px;
+}
+.bor-box + .bor-box {
+	margin-top: 8px;
+}
+.bor-none {
+	border: none !important;
+}
+.bor-none + .bor-box {
+	margin-top: 5px;
+}
+.file-ico {
+	display: block;
+	position: absolute;
+	right: 18px;
+	top: 14px;
+	width: 20px;
+	height: 20px;
+	background: url(../../images/ico_60_gy_2_attachment.png) no-repeat center;
+	background-size: contain;
+}
+/*** // login ***/

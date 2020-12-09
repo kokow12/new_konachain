@@ -1,0 +1,209 @@
+@import url(common/common.css);
+@import url(common/font.css);
+@import url(common/login.css);
+@import url(common/normalize.css);
+// @import url(common/slick-theme.css);
+@import url(common/slick.css);
+@import url(common/style.css);
+
+
+// konachain new css 201208
+.list-wrap {
+	background-color: #fff;
+    padding: 0 20px 5px;
+    & + .list-wrap {
+        margin-top: 10px;
+    }
+    // margin-top: 10px;
+    .vote-list-tit {
+        padding-top: 35px;
+        & >.tit {
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #000;
+            padding-bottom: 15px;
+            margin: 0;
+        }
+        .tit_box{
+            border: 1px solid #000000;
+            padding: 20px;
+            display: flex;
+            font-weight: 500;
+            span:first-child{
+                font-size: 18px;
+                flex: auto;
+            }
+            span:last-child{
+                font-size: 15px;
+                color: #6828ff;
+                // flex: auto;
+                a{
+                    &::after{
+                        content: '';
+                        background-image: url(../images/ico_chevron_right_bk_60.png);
+                        background-repeat: no-repeat;
+                        background-position: center 3px;
+                        background-size: 16px;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
+        .search_tit_box{
+
+        }
+    }
+    .vote-list {
+        li{
+            border-bottom: 1px solid #eeeeee;
+            padding: 22px 0;
+            .item {
+                display: block;
+                position: relative;
+                background-color: #fff;
+                border-radius: 6px;
+                .tit {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    max-height: 46px;
+                    padding-right: 50px;
+                }
+                .date {
+                    display: block;
+                    margin-top: 13px;
+                    font-size: 0;
+                    color: #999;
+                    &.date > span{
+                        font-size: 12px;
+                        & + span::before{
+                            content: '';
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 1px;
+                            height: 11px;
+                            margin: 2px 5px 0;
+                            background-color: #ddd;
+                        }
+                    }
+                    .d-day {
+                        font-family: 'Roboto';
+                    }
+                    & > .f_right {
+                        float: right;
+                        color: #6828ff;
+                        font-size: 12px;
+                        position: relative;
+                        text-align: center;
+                        & > a{
+                            display: inline-block;
+                            padding: 0 7px;
+                            width: 51px;
+                            height: 24px;
+                            line-height: 23px;
+                            font-size: 12px;
+                            color: #fff;
+                            white-space: nowrap;
+                            border-radius: 12px;
+                            letter-spacing: -.03em;
+                            position: absolute;
+                            right: 1px;
+                            top: -7px;
+                            &.tag-1{
+                                background-color: #000000;
+                            }
+                            &.tag-2{
+                                background-color: #6828ff;
+                            }
+                            &.tag-3{
+                                background-color: #ff6059;
+                            }
+                            &.tag-4{
+                                background-color: #22bfbd;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 더보기
+    .v_more{
+        font-size: 14px;
+        font-weight: 500;
+        margin: 15px 0 0px;
+        border: 0px;
+            &::after{
+                content: '';
+                background-image: url(../images/ico-arrowdown-bk.png);
+                background-repeat: no-repeat;
+                background-position: center 4px;
+                background-size: 20px;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                margin-left: 5px;
+            }
+        & + .vote-list-tit{
+            margin-top: 30px;
+        }
+    }
+    
+}
+.btn_wrap_box{
+    background-color: #fff;
+    padding: 0 20px 5px;
+    margin-top: 10px;
+    .new-input-text{
+        padding-top: 30px;
+        .btn-bd-gr-s{
+            border-radius: 1px;
+            height: 56px;
+            line-height: 54px;
+            background-color: #6828ff;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            margin: 0;
+            &.ico-arr::after{
+                background: url(../images/ico-arrow-right-wt.png) no-repeat center;
+                background-size: contain;
+                margin-top: -9px;
+            }
+        }
+    }
+}
+
+.search_box{
+    padding: 20px;
+    .input-text{
+        input{
+            border-radius:1px;
+            font-size: 18px;
+            height: 56px;
+        }
+        .btn-remove{
+            top: 20px;
+        }
+    }
+    .search_btn{
+        width: 30%;
+        margin-left: 5px;
+        border-radius:1px;
+        background-color: #6828ff;
+        color: #fff;
+        font-size: 18px;
+        height: 56px;
+        line-height: 55px;
+    }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "voting",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/h5bp/html5-boilerplate.svg)](https://travis-ci.org/h5bp/html5-boilerplate) [![devDependency Status](https://david-dm.org/h5bp/html5-boilerplate/dev-status.svg)](https://david-dm.org/h5bp/html5-boilerplate#info=devDependencies)",
+  "main": "gulpfile.js",
+  "directories": {
+    "": ""
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "gulp.spritesmith": "^6.11.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.10",
+    "del": "^5.1.0",
+    "del-gulpsass-blank-lines": "^0.1.3",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-tag-include": "^1.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-index": "^0.2.0",
+    "gulp-minify": "^3.0.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-util": "^3.0.7",
+    "gulp-w3cjs": "^1.3.0",
+    "gulp-watch": "^5.0.0",
+    "path": "^0.12.7",
+    "run-sequence": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
