@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" media="screen" type="text/css" href="../css/style.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/ui.js"></script>
+    <title>M_ONLINE_SURVEY_TERMINATE_01</title>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap" style="background-color:#f5f5f5;">
+        <include src="../html/include/header.html"></include>
+        <!-- main -->
+        <div class="main">
+            <!-- contents -->
+            <section class="contents">
+                <!-- title-box -->
+                <div class="title-box">
+					<a href="" class="btn-back">
+						<span class="blind">뒤로가기</span>
+					</a>
+					<h1 class="tit">설문조사 결과보기</h1>
+                </div>
+                <!-- //title-box -->
+
+                <!-- title_sub -->
+                <div class="title_top">
+                    <h3 class="tit">설문조사 제목</h3>
+                    <div>
+                        <span>2021년 가장 갖고 싶은 코나카드의 
+                            디자인 선호도에 대한 설문조사</span>
+                    </div>
+                </div>
+                <!-- //title_sub -->
+
+                <!-- con-wrap -->
+                <div class="con-wrap">
+                    <h3 class="tit">설문조사 질문</h3>
+                    <div class="tit_sub">1. 귀하의 성별은 무엇입니까?</div>
+                    <!-- graph-counting-list -->
+					<ul class="graph-counting-list">
+						<li>
+							<div>
+								<div class="bar-wrap">
+									<div class="bar yellow" data-width-ani="100"><!-- data-width-ani : bar width (unit:%)-->
+										<span class="text">남</span>
+									</div>
+								</div>
+								<div class="num-wrap">
+									<!-- data-counting :  counting animation !! only number !! -->
+									<span class="counting" data-counting="56">0</span>%
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="bar-wrap">
+									<div class="bar" data-width-ani="50"><!-- data-width-ani : bar width (unit:%)-->
+										<span class="text">여</span>
+									</div>
+								</div>
+								<div class="num-wrap">
+									<!-- data-counting :  counting animation !! only number !! -->
+									<span class="counting" data-counting="40">0</span>%
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- // graph-counting-list -->
+                </div>
+                <!-- // con-wrap -->
+                <!-- con-wrap -->
+                <div class="con-wrap">
+                    <div class="tit_sub">2. 코나카드를 이용해 본 적이 있습니까?</div>
+                     <!-- graph-counting-list -->
+					<ul class="graph-counting-list">
+						<li>
+							<div>
+								<div class="bar-wrap">
+									<div class="bar yellow" data-width-ani="80"><!-- data-width-ani : bar width (unit:%)-->
+										<span class="text">예</span>
+									</div>
+								</div>
+								<div class="num-wrap">
+									<!-- data-counting :  counting animation !! only number !! -->
+									<span class="counting" data-counting="46">0</span>%
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>
+								<div class="bar-wrap">
+									<div class="bar" data-width-ani="20"><!-- data-width-ani : bar width (unit:%)-->
+										<span class="text">아니오</span>
+									</div>
+								</div>
+								<div class="num-wrap">
+									<!-- data-counting :  counting animation !! only number !! -->
+									<span class="counting" data-counting="30">0</span>%
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- // graph-counting-list -->
+                </div>
+                <!-- // con-wrap -->
+                <!-- con-wrap -->
+                <div class="con-wrap">
+                    <div class="tit_sub">3. 지인에게 선물로 주고싶은 코나카드의
+                        디자인에 대한 당신의 선택은 무엇입니까?
+                        <p>복수 선택 가능</p>
+                    </div>
+                    <div class="input-check-list_2">
+						<!-- checkbox, radio  -->
+						<label>
+							<input type="checkbox" name="rdg_grp_03" checked="">
+							<span class="bar">1) GOLD Love - 혼자일 땐 몰랐던 행복</span>
+						</label>
+						<label>
+							<input type="checkbox" name="rdg_grp_03">
+							<span class="bar">2) 클라우드 나인 - 더할 나위 없이 행복하다</span>
+                        </label>
+                        <label>
+							<input type="checkbox" name="rdg_grp_03">
+							<span class="bar">3) 코나홀릭 - 코나홀릭. 세련된 당신과 어울리는 메탈릭 카드</span>
+                        </label>
+                        
+                        <label>
+							<input type="checkbox" name="rdg_grp_03">
+							<span class="bar">4) 노리타케 Special Edition - 세계적인 일러스트레이터 노리타케와 코나카드의 만남</span>
+                        </label>
+                        <label>
+							<input type="checkbox" name="rdg_grp_03">
+							<span class="bar">5) 기타</span>
+                        </label>
+                    </div>
+                    <div class="textarea">
+						<textarea rows="4" placeholder="기타 의견이 있으면 입력해주세요. (선택)" maxlength="100"></textarea>
+						<div class="textarea-count">(<span>0</span>/100)자 이내</div>
+					</div>
+                </div>
+                <!-- // con-wrap -->
+                <!-- con-wrap -->
+                <div class="con-wrap">
+                    <div class="tit_sub">4. 카드사용에 대한 만족도는 어떻습니까?</div>
+                    <div class="num-radio-list new-num-radio-list">
+                        <div class="list">
+                            <label>
+                                <input type="radio" name="rdo_grp_02" checked="">
+                                <span>1</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rdo_grp_02">
+                                <span>2</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rdo_grp_02">
+                                <span>3</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rdo_grp_02">
+                                <span>4</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rdo_grp_02">
+                                <span>5</span>
+                            </label> 
+                        </div>
+                        <div class="text">
+                            <span>매우 불만족</span>
+                            <span>보통</span>
+                            <span>매우 만족</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- // con-wrap -->
+                <!-- con-wrap -->
+                <div class="con-wrap">
+                    <div class="tit_sub no_sta">5. 제품에 대한 의견을 말씀해주세요.</div>
+                    <div class="textarea">
+						<textarea rows="4" placeholder="" maxlength="100"></textarea>
+						<div class="textarea-count">(<span>0</span>/100)자 이내</div>
+                    </div>
+                    <div class="btn-wrap">
+                        <button type="button" class="btn-gr">취소</button>
+                        <button type="button" class="btn-pu">참여하기</button>
+                    </div>
+                </div>
+                <!-- // con-wrap -->
+               
+            </section>
+            <!-- // contents -->
+            <include src="../html/include/footer.html"></include>
+        </div>
+        <!-- // main -->
+    </div>
+    <!-- // wrap -->
+    <include src="../html/include/sidebar.html"></include>
+</body>
+
+</html>

@@ -8,6 +8,7 @@
 
 
 // konachain new css 201208
+
 .list-wrap {
 	background-color: #fff;
     padding: 0 20px 5px;
@@ -55,7 +56,16 @@
             }
         }
         .search_tit_box{
-
+            font-size: 15px;
+            font-weight: bold;
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #000;
+            padding-bottom: 15px;
+            margin: 0;
+            & span:last-child{
+                color: #6828ff;
+            }
         }
     }
     .vote-list {
@@ -77,7 +87,10 @@
                     font-weight: 400;
                     line-height: 24px;
                     max-height: 46px;
-                    padding-right: 50px;
+                    padding-right: 22%;
+                    b{
+                        color: #6828ff;
+                    }
                 }
                 .date {
                     display: block;
@@ -129,10 +142,29 @@
                                 background-color: #ff6059;
                             }
                             &.tag-4{
-                                background-color: #22bfbd;
+                                background-color: #ffb924;
                             }
                         }
                     }
+                }
+            }
+            .search_none{
+                text-align: center;
+                h3{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    margin-bottom: 25px;
+                }
+                button{
+                    border: 1px solid #6828ff;
+                    padding: 10px 13px;
+                    color: #6828ff;
+                    font-size: 15px;
                 }
             }
         }
@@ -160,6 +192,78 @@
     }
     
 }
+
+
+.con-wrap{
+    background-color: #fff;
+    padding: 30px 20px 30px;
+    margin-bottom: 10px;
+    h3.tit{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0 18px;
+    }
+    .tit_sub{
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        line-height: 24px;
+        p{
+            font-size: 12px;
+            margin-top: 5px;
+            color: #999999;
+        }
+        &::before{
+            content: '*';
+            color: #ff4155;
+            font-size: 18px;
+        }
+        &.no_sta::before{
+            content: none;
+        }
+    }
+    .warning{
+        font-size: 12px;
+        color: #ff4155;
+        line-height: 21px;
+        &::before{
+            content: '*';
+            color: #ff4155;
+            font-size: 12px;
+        }
+    }
+    .new-num-radio-list{
+        margin: 0;
+        & > .list span{
+            width: 56px;
+            height: 56px;
+            line-height: 56px;
+            border-radius: 0px;
+            border:1px solid #eeeeee;
+        }
+    }
+}
+.title_top{
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    h3.tit{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0 18px;
+    }
+    div{
+        padding: 20px;
+        background-color: #f5f5f5;
+        span{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+}
+
+
 .btn_wrap_box{
     background-color: #fff;
     padding: 0 20px 5px;
@@ -207,3 +311,4 @@
         line-height: 55px;
     }
 }
+
